@@ -1,0 +1,9 @@
+name: workflow-deployment
+on: workflow_dispatch
+
+jobs:
+  step_one:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
